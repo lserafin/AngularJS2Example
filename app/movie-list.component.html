@@ -1,0 +1,10 @@
+<h2>Movie List</h2>
+
+<p><i>Pick a movie from the list</i></p>
+<ul>
+  <li *ngFor="let movie of movies" (click)="selectMovie(movie)">
+    {{movie.title}}
+  </li>
+</ul>
+
+<movie-detail *ngIf="selectedMovie" [movie]="selectedMovie"></movie-detail>
