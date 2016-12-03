@@ -6,7 +6,7 @@ import { MovieService }         from './movie.service';
 @Component({
   moduleId: module.id,
   selector:    'movie-list',
-  templateUrl: 'movie-list.component.html',
+  templateUrl: '/app/movie-list.component.html',
   providers:  [ MovieService ]
 })
 export class MovieListComponent implements OnInit {
